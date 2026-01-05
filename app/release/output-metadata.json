@@ -11,9 +11,9 @@
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 1,
-      "versionName": "1.1",
-      "outputFile": "app-release.apk"
+      "versionCode": 3020008,
+      "versionName": "3.2.8",
+      "outputFile": "MDBTransaction-3.2.8-release.apk"
     }
   ],
   "elementType": "File"

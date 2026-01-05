@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fragment_height_pulse"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="duration"/>
+        <EditText
+            android:id="@+id/et_duration"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:hint="200ms"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/voltage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="voltage:" />
+        <Spinner
+            android:id="@+id/spn_voltage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spn_voltage" />
+        <Button
+            android:id="@+id/btn_set_pulse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="frequency:"/>
+        <EditText
+            android:id="@+id/et_frequency"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:hint="1"
+            />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="interval:"/>
+        <EditText
+            android:id="@+id/et_latency"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:hint="300ms"
+            android:textSize="12sp"
+            />
+        <Button
+            android:id="@+id/btn_trigger_pulse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="send"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>

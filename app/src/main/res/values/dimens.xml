@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fragment_height_home">100dp</dimen>
+    <dimen name="fragment_height_pulse">140dp</dimen>
+    <dimen name="fragment_height_transaction">220dp</dimen>
+</resources>

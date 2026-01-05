@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">MDBTest</string>
+    <string name="app_name">MDBTransaction</string>
+    <string name="nav_drawer_open">Open navigation drawer</string>
+    <string name="nav_drawer_close">Close navigation drawer</string>
+
+
 </resources>

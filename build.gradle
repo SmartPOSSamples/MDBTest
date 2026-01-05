@@ -1,13 +1,19 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
+    ext {
+        agp_version = '7.4.2'
+        agp_version1 = '8.0.0'
+        agp_version2 = '8.1.0'
+        agp_version3 = '8.2.0'
+        agp_version4 = '7.4.2'
+        agp_version5 = '7.4.2'
+    }
     repositories {
-//        google()
-//        jcenter()
-        maven {url "https://maven.aliyun.com/repository/google"}
-        maven {url "https://maven.aliyun.com/repository/public"}
+        google()
+        jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.2.1'
+        classpath "com.android.tools.build:gradle:$agp_version5"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -16,10 +22,8 @@ buildscript {
 
 allprojects {
     repositories {
-//        google()
-//        jcenter()
-        maven {url "https://maven.aliyun.com/repository/google"}
-        maven {url "https://maven.aliyun.com/repository/public"}
+        google()
+        jcenter()
     }
 }
 

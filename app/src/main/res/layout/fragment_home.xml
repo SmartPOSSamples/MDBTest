@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fragment_height_home"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="close"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="open"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_get_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GetVersion"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_mdb_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MDB start"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn_mdb_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MDB stop"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_factory_mode"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="enter factory mode"
+            android:layout_gravity="bottom"
+            android:textAllCaps="false"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/btn_get_hardware_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Hardware Version"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_diagnose_hardware"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="diagnose hardware"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>
