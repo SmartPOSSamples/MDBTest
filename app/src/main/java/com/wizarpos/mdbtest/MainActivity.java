@@ -766,12 +766,13 @@ public class MainActivity extends AppCompatActivity implements DataSendListener 
 
     //begin session
     private void startTransaction() {
+
         Log.d(TAG, "mdb: " + mdbValues.getOptionalFeature().isAlwaysIdleMdb() + ", vmc: " + mdbValues.getOptionalFeature().isAlwaysIdleVmc());
         if(mdbValues.getOptionalFeature().isAlwaysIdleMdb() && mdbValues.getOptionalFeature().isAlwaysIdleVmc()){
             Log.d(TAG, "always idle");
             handler.obtainMessage(MDBUtils.BLACK_LOG, "always idle").sendToTarget();
         } else {
-            SystemClock.sleep(5000);
+            SystemClock.sleep(500);
             byte[] wbytes = EnumMDBCommands.getRequestOfMdbCommands(EnumMDBCommands.MDB_REQUEST.BEGIN_SESSION, mdbValues);
             try {
                 serialPortDevice.write(wbytes, 0, wbytes.length);
